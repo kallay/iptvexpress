@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.IPTV.Express"
+       name="IPTV Express"
+       version="2.5.1"
+       provider-name="gobihun">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.urlresolver" version="0.0.1"/>
+    <import addon="script.module.t0mm0.common" version="0.0.1"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>IPTV Express</summary>
+    <description>IPTV Express lets you add streams by adding items to an xml file.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Movie.Express"
+       name="Movie Express"
+       version="1.0.2"
+       provider-name="gobihun">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+        <import addon="script.module.t0mm0.common" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Watch Hindi, Tamil  movies</summary>
+        <description>This XBMC plugin allows to watch Hindi and Tamil movies from Einthusan.com.
+
+        Credits to suriya222 for the thumbnails.</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.Express.HD" name="Movie Express HD" version="0.0.3" provider-name="gobihun">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	 <import addon="script.module.simplejson" version="2.0.10" />
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+    <import addon="script.module.urlresolver" version="2.0.9"/>
+    <import addon="plugin.video.dailymotion_com" version="2.1.1"/>
+    <import addon="script.module.t0mm0.common" version="2.1.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch Tamil, Hindi and Telugu Movies in HD.</summary>
+    <description lang="en">Links to watch Tamil, Hindi and Telugu Movies.</description>
+    <platform>all</platform>
+    <language></language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+</addons>
